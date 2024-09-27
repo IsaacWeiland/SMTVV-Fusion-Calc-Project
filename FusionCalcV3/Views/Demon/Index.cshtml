@@ -1,0 +1,22 @@
+@model IEnumerable<Demons>
+
+<h2>List of Demons</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Level</th>
+        <th>Race</th>
+        <th>Alignment</th>
+    </tr>
+
+    @foreach (var demon in @Model)
+    {
+    <tr>
+        <td>@demon.Name</td>
+        <td>@demon.Level</td>
+        <td>@demon.Race</td>
+        <td>@demon.Alignment</td>
+    </tr>
+    }
+</table>
