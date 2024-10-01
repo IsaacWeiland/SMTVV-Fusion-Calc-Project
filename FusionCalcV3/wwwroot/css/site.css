@@ -19,4 +19,13 @@ html {
 
 body {
   margin-bottom: 60px;
+  background: url("./Images/moon-from-pngfre-2.png") no-repeat top center, 
+          linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(10,83,190,1) 50%, rgba(0,0,0,1) 100%)
+  ;
+  color: #132c7f;
+}
+
+#headliner{
+  font: 50px Copperplate Gothic;
+  text-shadow: white 1px 1px 1px;
 }

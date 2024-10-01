@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3CZN69YKknhMMVQOrYahZG060eaW19Fqz3KOCyJeqB0=",
+  "Hash": "8+MbNw2N9BTwQaHRqyQNAOu49UfLWGp5jJER+410fzs=",
   "Source": "FusionCalcV3",
   "BasePath": "_content/FusionCalcV3",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\FusionCalcV3.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\logo.webp",
+      "SourceId": "FusionCalcV3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\",
+      "BasePath": "_content/FusionCalcV3",
+      "RelativePath": "css/Images/logo.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\logo.webp"
+    },
+    {
+      "Identity": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\moon-from-pngfre-2.png",
+      "SourceId": "FusionCalcV3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\",
+      "BasePath": "_content/FusionCalcV3",
+      "RelativePath": "css/Images/moon-from-pngfre-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\moon-from-pngfre-2.png"
     },
     {
       "Identity": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\site.css",

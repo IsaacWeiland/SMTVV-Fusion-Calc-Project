@@ -14,6 +14,7 @@ builder.Services.AddScoped<IDbConnection>((s) =>
     return conn;
 });
 builder.Services.AddTransient<IDemonRepo, DemonRepository>();
+builder.Services.AddTransient<ITableRepo, TableRepository>();
 
 var app = builder.Build();
 

@@ -1,0 +1,96 @@
+@model FusionTable
+
+<h2>Create new recipe</h2>
+
+@using (Html.BeginForm("InsertToDatabase", "Table", "Post"))
+{
+    <label asp-for="RaceName" class="control-label">Race Name</label>
+    <input type="text" name="Race" class="form-control" value=""/>
+    <label asp-for="Herald" class="control-label">Herald Result</label>
+    <input type="text" name="Herald" class="form-control" value=""/>
+    <label asp-for="Megami" class="control-label">Megami Result</label>
+    <input type="text" name="Megami" class="form-control" value=""/>
+    <label asp-for="Avian" class="control-label">Avian Result</label>
+    <input type="text" name="Avian" class="form-control" value=""/>
+    <label asp-for="Divine" class="control-label">Divine Result</label>
+    <input type="text" name="Divine" class="form-control" value=""/>
+    <label asp-for="Yoma" class="control-label">Yoma Result</label>
+    <input type="text" name="Yoma" class="form-control" value=""/>
+    <label asp-for="Vile" class="control-label">Vile Result</label>
+    <input type="text" name="Vile" class="form-control" value=""/>
+    <label asp-for="Raptor" class="control-label">Raptor Result</label>
+    <input type="text" name="Raptor" class="form-control" value=""/>
+    <label asp-for="Deity" class="control-label">Deity Result</label>
+    <input type="text" name="Deity" class="form-control" value=""/>
+    <label asp-for="Wargod" class="control-label">Wargod Result</label>
+    <input type="text" name="Wargod" class="form-control" value=""/>
+    <label asp-for="Avatar" class="control-label">Avatar Result</label>
+    <input type="text" name="Avatar" class="form-control" value=""/>
+    <label asp-for="Holy" class="control-label">Holy Result</label>
+    <input type="text" name="Holy" class="form-control" value=""/>
+    <label asp-for="Genma" class="control-label">Genma Result</label>
+    <input type="text" name="Genma" class="form-control" value=""/>
+    <label asp-for="Element" class="control-label">Element Result</label>
+    <input type="text" name="Element" class="form-control" value=""/>
+    <label asp-for="Fairy" class="control-label">Fairy Result</label>
+    <input type="text" name="Fairy" class="form-control" value=""/>
+    <label asp-for="Beast" class="control-label">Beast Result</label>
+    <input type="text" name="Beast" class="form-control" value=""/>
+    <label asp-for="Jirae" class="control-label">Jirae Result</label>
+    <input type="text" name="Jirae" class="form-control" value=""/>
+    <label asp-for="Fiend" class="control-label">Fiend Result</label>
+    <input type="text" name="Fiend" class="form-control" value=""/>
+    <label asp-for="Jaki" class="control-label">Jaki Result</label>
+    <input type="text" name="Jaki" class="form-control" value=""/>
+    <label asp-for="Wilder" class="control-label">Wilder Result</label>
+    <input type="text" name="Wilder" class="form-control" value=""/>
+    <label asp-for="Fury" class="control-label">Fury Result</label>
+    <input type="text" name="Fury" class="form-control" value=""/>
+    <label asp-for="Lady" class="control-label">Lady Result</label>
+    <input type="text" name="Lady" class="form-control" value=""/>
+    <label asp-for="Dragon" class="control-label">Dragon Result</label>
+    <input type="text" name="Dragon" class="form-control" value=""/>
+    <label asp-for="Kishin" class="control-label">Kishin Result</label>
+    <input type="text" name="Kishin" class="form-control" value=""/>
+    <label asp-for="Kunitsu" class="control-label">Kunitsu Result</label>
+    <input type="text" name="Kunitsu" class="form-control" value=""/>
+    <label asp-for="Femme" class="control-label">Femme Result</label>
+    <input type="text" name="Femme" class="form-control" value=""/>
+    <label asp-for="Brute" class="control-label">Brute Result</label>
+    <input type="text" name="Brute" class="form-control" value=""/>
+    <label asp-for="Fallen" class="control-label">Fallen Result</label>
+    <input type="text" name="Fallen" class="form-control" value=""/>
+    <label asp-for="Night" class="control-label">Night Result</label>
+    <input type="text" name="Night" class="form-control" value=""/>
+    <label asp-for="Snake" class="control-label">Snake Result</label>
+    <input type="text" name="Snake" class="form-control" value=""/>
+    <label asp-for="Tyrant" class="control-label">Tyrant Result</label>
+    <input type="text" name="Tyrant" class="form-control" value=""/>
+    <label asp-for="Drake" class="control-label">Drake Result</label>
+    <input type="text" name="Drake" class="form-control" value=""/>
+    <label asp-for="Haunt" class="control-label">Haunt Result</label>
+    <input type="text" name="Haunt" class="form-control" value=""/>
+    <label asp-for="Foul" class="control-label">Foul Result</label>
+    <input type="text" name="Foul" class="form-control" value=""/>
+    <label asp-for="UMA" class="control-label">UMA Result</label>
+    <input type="text" name="UMA" class="form-control" value=""/>
+    <label asp-for="Enigma" class="control-label">Enigma Result</label>
+    <input type="text" name="Enigma" class="form-control" value=""/>
+    <label asp-for="Qadishtu" class="control-label">Qadishtu Result</label>
+    <input type="text" name="Qadishutu" class="form-control" value=""/>
+    <label asp-for="Devil" class="control-label">Devil Result</label>
+    <input type="text" name="Devil" class="form-control" value=""/>
+    <label asp-for="Primal" class="control-label">Primal Result</label>
+    <input type="text" name="Primal" class="form-control" value=""/>
+    
+    <label asp-for="Earth" class="control-label">Earth Result</label>
+    <input type="number" step="1" name="Earth" class="form-control"/>
+    <label asp-for="Wind" class="control-label">Wind Result</label>
+    <input type="number" step="1" name="Wind" class="form-control"/>
+    <label asp-for="Fire" class="control-label">Fire Result</label>
+    <input type="number" step="1" name="Fire" class="form-control"/>
+    <label asp-for="Water" class="control-label">Water Result</label>
+    <input type="number" step="1" name="Fire" class="form-control"/>
+    
+    <input type="submit" value="Create recipe" class="bt btn-primary"/>
+}

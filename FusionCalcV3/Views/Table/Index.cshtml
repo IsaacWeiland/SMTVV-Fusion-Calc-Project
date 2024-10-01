@@ -1,0 +1,95 @@
+@model IEnumerable<FusionTable>
+
+<h2>Fusion Chart</h2>
+<div style="display: block">
+    <a href="/Table/InsertTable/">Add Fusions</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Race</th>
+        <th>Avatar</th>
+        <th>Avian</th>
+        <th>Beast</th>
+        <th>Brute</th>
+        <th>Deity</th>
+        <th>Devil</th>
+        <th>Divine</th>
+        <th>Dragon</th>
+        <th>Drake</th>
+        <th>Element</th>
+        <th>Enigma</th>
+        <th>Fairy</th>
+        <th>Fallen</th>
+        <th>Femme</th>
+        <th>Fiend</th>
+        <th>Foul</th>
+        <th>Fury</th>
+        <th>Genma</th>
+        <th>Haunt</th>
+        <th>Herald</th>
+        <th>Holy</th>
+        <th>Jaki</th>
+        <th>Jirae</th>
+        <th>Kishin</th>
+        <th>Kunitsu</th>
+        <th>Lady</th>
+        <th>Megami</th>
+        <th>Night</th>
+        <th>Primal</th>
+        <th>Qadishtu</th>
+        <th>Raptor</th>
+        <th>Snake</th>
+        <th>Tyrant</th>
+        <th>UMA</th>
+        <th>Vile</th>
+        <th>Wargod</th>
+        <th>Wilder</th>
+        <th>Yoma</th>
+    </tr>
+    
+    @foreach (var race in @Model)
+    {
+        <tr>
+            <td>@race.RaceName</td>
+            <td>@race.Avatar</td>
+            <td>@race.Avian</td>
+            <td>@race.Beast</td>
+            <td>@race.Brute</td>
+            <td>@race.Deity</td>
+            <td>@race.Devil</td>
+            <td>@race.Divine</td>
+            <td>@race.Dragon</td>
+            <td>@race.Drake</td>
+            <td>@race.Element</td>
+            <td>@race.Enigma</td>
+            <td>@race.Fairy</td>
+            <td>@race.Fallen</td>
+            <td>@race.Femme</td>
+            <td>@race.Fiend</td>
+            <td>@race.Foul</td>
+            <td>@race.Fury</td>
+            <td>@race.Genma</td>
+            <td>@race.Haunt</td>
+            <td>@race.Herald</td>
+            <td>@race.Holy</td>
+            <td>@race.Jaki</td>
+            <td>@race.Jirae</td>
+            <td>@race.Kishin</td>
+            <td>@race.Kunitsu</td>
+            <td>@race.Lady</td>
+            <td>@race.Megami</td>
+            <td>@race.Night</td>
+            <td>@race.Primal</td>
+            <td>@race.Qadishtu</td>
+            <td>@race.Raptor</td>
+            <td>@race.Snake</td>
+            <td>@race.Tyrant</td>
+            <td>@race.UMA</td>
+            <td>@race.Vile</td>
+            <td>@race.Wargod</td>
+            <td>@race.Wilder</td>
+            <td>@race.Yoma</td>
+        </tr>
+    }
+</table>

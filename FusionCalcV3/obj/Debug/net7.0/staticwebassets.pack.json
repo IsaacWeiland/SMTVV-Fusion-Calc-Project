@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\FusionCalcV3.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\logo.webp",
+      "PackagePath": "staticwebassets\\css\\Images\\logo.webp"
+    },
+    {
+      "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\moon-from-pngfre-2.png",
+      "PackagePath": "staticwebassets\\css\\Images\\moon-from-pngfre-2.png"
+    },
+    {
       "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

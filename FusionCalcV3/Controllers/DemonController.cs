@@ -5,16 +5,17 @@ namespace FusionCalcV3.Controllers;
 
 public class DemonController : Controller
 {
-    private readonly IDemonRepo _repo;
+    private readonly IDemonRepo _demonRepo;
 
-    public DemonController(IDemonRepo repo)
+    public DemonController(IDemonRepo demonRepo)
     {
-        _repo = repo;
+        _demonRepo = demonRepo;
     }
+    
     // GET
     public IActionResult Index()
     {
-        var demons = _repo.GetAllDemons();
+        var demons = _demonRepo.GetAllDemons();
         return View(demons);
     }
 }
