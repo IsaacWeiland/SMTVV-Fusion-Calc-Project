@@ -16,6 +16,12 @@ public class TableRepository : ITableRepo
     {
         return _conn.Query<FusionTable>("SELECT * FROM fuse;");
     }
+
+    public FusionTable GetRaceStats(int id)
+    {
+        return _conn.QuerySingle<FusionTable>("SELECT * FROM fuse WHERE RaceID = @id", new { id = id });
+    }
+
     public void AddToFusion(FusionTable table)
     {
         _conn.Execute(

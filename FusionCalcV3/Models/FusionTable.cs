@@ -2,6 +2,7 @@ namespace FusionCalcV3.Models;
 
 public class FusionTable
 {
+    public int RaceID { get; set; }
     public string RaceName { get; set; }
     public string Avatar { get; set; }
     public string Avian { get; set; }

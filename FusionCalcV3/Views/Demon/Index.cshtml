@@ -13,7 +13,7 @@
     @foreach (var demon in @Model)
     {
     <tr>
-        <td>@demon.Name</td>
+        <td><a href="/Demon/ViewDemon/@demon.Name">@demon.Name</a></td>
         <td>@demon.Level</td>
         <td>@demon.Race</td>
         <td>@demon.Alignment</td>

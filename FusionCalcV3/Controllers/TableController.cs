@@ -20,6 +20,12 @@ public class TableController : Controller
         return View(table);
     }
 
+    public IActionResult ViewRace(int id)
+    {
+        var viewRace = _tableRepo.GetRaceStats(id);
+        return View(viewRace);
+    }
+
     public IActionResult InsertTable()
     {
         var table = _tableRepo.AssignTable();

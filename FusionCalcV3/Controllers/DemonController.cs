@@ -18,4 +18,10 @@ public class DemonController : Controller
         var demons = _demonRepo.GetAllDemons();
         return View(demons);
     }
+
+    public IActionResult ViewDemon(string id)
+    {
+        var demon = _demonRepo.GetDemon(id);
+        return View(demon);
+    }
 }

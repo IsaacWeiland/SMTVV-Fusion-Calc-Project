@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Demon/ViewDemon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb25cVmlld0RlbW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Table/InsertTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcSW5zZXJ0VGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Table/ViewRace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcVmlld1JhY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/_ViewImports.cshtml]

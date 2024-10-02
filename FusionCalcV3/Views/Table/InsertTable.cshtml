@@ -5,7 +5,7 @@
 @using (Html.BeginForm("InsertToDatabase", "Table", "Post"))
 {
     <label asp-for="RaceName" class="control-label">Race Name</label>
-    <input type="text" name="Race" class="form-control" value=""/>
+    <input type="text" name="RaceName" class="form-control" value=""/>
     <label asp-for="Herald" class="control-label">Herald Result</label>
     <input type="text" name="Herald" class="form-control" value=""/>
     <label asp-for="Megami" class="control-label">Megami Result</label>
@@ -77,7 +77,7 @@
     <label asp-for="Enigma" class="control-label">Enigma Result</label>
     <input type="text" name="Enigma" class="form-control" value=""/>
     <label asp-for="Qadishtu" class="control-label">Qadishtu Result</label>
-    <input type="text" name="Qadishutu" class="form-control" value=""/>
+    <input type="text" name="Qadishtu" class="form-control" value=""/>
     <label asp-for="Devil" class="control-label">Devil Result</label>
     <input type="text" name="Devil" class="form-control" value=""/>
     <label asp-for="Primal" class="control-label">Primal Result</label>
@@ -90,7 +90,7 @@
     <label asp-for="Fire" class="control-label">Fire Result</label>
     <input type="number" step="1" name="Fire" class="form-control"/>
     <label asp-for="Water" class="control-label">Water Result</label>
-    <input type="number" step="1" name="Fire" class="form-control"/>
+    <input type="number" step="1" name="Water" class="form-control"/>
     
     <input type="submit" value="Create recipe" class="bt btn-primary"/>
 }
