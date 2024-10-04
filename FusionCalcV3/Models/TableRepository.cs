@@ -17,9 +17,9 @@ public class TableRepository : ITableRepo
         return _conn.Query<FusionTable>("SELECT * FROM fuse;");
     }
 
-    public FusionTable GetRaceStats(int id)
+    public FusionTable GetRaceStats(string id)
     {
-        return _conn.QuerySingle<FusionTable>("SELECT * FROM fuse WHERE RaceID = @id", new { id = id });
+        return _conn.QuerySingle<FusionTable>("SELECT * FROM fuse WHERE RaceName = @id", new { id });
     }
 
     public void AddToFusion(FusionTable table)
@@ -39,6 +39,28 @@ public class TableRepository : ITableRepo
             vile = table.Vile, wargod = table.Wargod, wilder = table.Wilder, yoma = table.Yoma, element = table.Element,
             earth = table.Earth, wind = table.Wind, fire = table.Fire, water = table.Water
         });
+    }
+    public void UpdateToFusion(FusionTable table)
+    {
+        _conn.Execute(
+            "UPDATE fuse SET Herald = @herald, Megami = @megami, Avian = @avian, Divine = @divine, Yoma = @yoma, Vile = @vile, Raptor = @raptor, Deity = @deity, Wargod = @wargod, " +
+            "Avatar = @avatar, Holy = @holy, Genma = @genma, Fairy = @fairy, Beast = @beast, Jirae = @jirae, Fiend = @fiend, Jaki = @jaki, Wilder = @wilder, " +
+            "Fury = @fury, Lady = @lady, Dragon = @dragon, Kishin = @kishin, kunitsu = @kunitsu, Femme = @femme, Brute = @brute, Fallen = @fallen, Night = @night, Snake = @snake, " +
+            "Tyrant = @tyrant, Drake = @drake, Haunt = @haunt, Foul = @foul, UMA = @uma, Enigma = @enigma, Qadishtu = @qadishtu, Devil = @devil, Primal = @primal, " +
+            "Element = @element, Earth = @earth, Wind = @wind, Fire = @fire, Water = @water WHERE RaceName = @id",
+            new
+            {
+                id = table.RaceName,
+                avatar = table.Avatar, avian = table.Avian, beast = table.Beast, brute = table.Brute,
+                deity = table.Deity, devil = table.Devil, divine = table.Divine, dragon = table.Dragon,
+                drake = table.Drake, enigma = table.Enigma, fairy = table.Fairy, fallen = table.Fallen, femme = table.Femme,
+                fiend = table.Fiend, foul = table.Foul, fury = table.Fury, genma = table.Genma, haunt = table.Haunt,
+                herald = table.Herald, holy = table.Holy, jaki = table.Jaki, jirae = table.Jirae, kishin = table.Kishin,
+                kunitsu = table.Kunitsu, lady = table.Lady, megami = table.Megami, night = table.Night, primal = table.Primal,
+                qadishtu = table.Qadishtu, raptor = table.Raptor, snake = table.Snake, tyrant = table.Tyrant, uma = table.UMA,
+                vile = table.Vile, wargod = table.Wargod, wilder = table.Wilder, yoma = table.Yoma, element = table.Element,
+                earth = table.Earth, wind = table.Wind, fire = table.Fire, water = table.Water
+            });
     }
 
     public FusionTable AssignTable()

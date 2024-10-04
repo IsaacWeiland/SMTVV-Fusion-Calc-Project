@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\0ni\Desktop\repos\FusionCalcV3\FusionCalcV3
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Demon/FusionFailed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb25cRnVzaW9uRmFpbGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Demon/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Demon/ViewCalculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb25cVmlld0NhbGN1bGF0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Demon/ViewDemon.cshtml]
@@ -30,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Home/SpecialThanks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTcGVjaWFsVGhhbmtzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Shared/Error.cshtml]
@@ -46,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Table/InsertTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcSW5zZXJ0VGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Table/UpdateTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcVXBkYXRlVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/0ni/Desktop/repos/FusionCalcV3/FusionCalcV3/Views/Table/ViewRace.cshtml]

@@ -20,7 +20,7 @@ public class TableController : Controller
         return View(table);
     }
 
-    public IActionResult ViewRace(int id)
+    public IActionResult ViewRace(string id)
     {
         var viewRace = _tableRepo.GetRaceStats(id);
         return View(viewRace);
@@ -36,5 +36,22 @@ public class TableController : Controller
     {
         _tableRepo.AddToFusion(table);
         return RedirectToAction("Index");
+    }
+
+    public IActionResult UpdateTable(string id)
+    {
+        FusionTable fTable = _tableRepo.GetRaceStats(id);
+        if (fTable == null)
+        {
+            return View("Data not found.");
+        }
+
+        return View(fTable);
+    }
+
+    public IActionResult UpdateToDatabase(FusionTable fusionTable)
+    {
+        _tableRepo.UpdateToFusion(fusionTable);
+        return RedirectToAction("ViewRace", new { id = fusionTable.RaceName });
     }
 }

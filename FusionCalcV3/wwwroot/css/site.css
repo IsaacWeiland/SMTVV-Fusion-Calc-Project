@@ -20,7 +20,7 @@ html {
 body {
   margin-bottom: 60px;
   background: url("./Images/moon-from-pngfre-2.png") no-repeat top center, 
-          linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(10,83,190,1) 50%, rgba(0,0,0,1) 100%)
+          linear-gradient(90deg, rgba(10,83,190,1) 0%, rgba(0,0,0,1) 50%, rgba(10,83,190,1) 100%) no-repeat;
   ;
   color: #132c7f;
 }
@@ -28,4 +28,30 @@ body {
 #headliner{
   font: 50px Copperplate Gothic;
   text-shadow: white 1px 1px 1px;
+}
+
+.table{
+  color: white;
+  text-shadow: 1px 1px black;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(235,229,91,0.8) 4%, rgba(187,190,10,.75) 50%, rgba(0,0,0,0) 100%);
+}
+a{
+  text-shadow: none;
+ color: black; 
+}
+h2{
+  align-items: center;
+  text-shadow: 1px 1px #b3ccea;
+}
+footer{
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
+  text-shadow: none;
+}
+#Thankyou{
+  text-align: center;
+  font-size: 20px;
+  text-shadow: black 1px 1px;
+  color: white;
 }

@@ -11,4 +11,8 @@
       <PackageReference Include="MySql.Data" Version="9.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Calc\Index.cshtml" />
+    </ItemGroup>
+
 </Project>

@@ -1,0 +1,23 @@
+@model IEnumerable<Demons>
+
+<h1>Fusion Calculator</h1>
+@using (Html.BeginForm("CalculateResult","Demon","Post"))
+{
+<div class="form-group">
+    <label for="">Select Demons</label>
+    <select class="form-control" name="Input1" value="">
+        @foreach (var demon in @Model)
+        {
+        <option value="@demon.Name">@demon.Name</option>
+        }
+    </select>
+    <select class="form-control" name="Input2" value="">
+        @foreach (var demon in @Model)
+        {
+        <option value="@demon.Name">@demon.Name</option>
+        }
+    </select>
+
+    <input type="submit" value="Start Fusion" class="bt btn-primary"/>
+</div>
+}
