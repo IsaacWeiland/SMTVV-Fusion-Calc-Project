@@ -17,6 +17,6 @@ public static class CalculateLevel
         {
             result = 1;
         }
-        return result;
+        return result + 1;
     }
 }

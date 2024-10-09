@@ -3,21 +3,40 @@
 <h1>Fusion Calculator</h1>
 @using (Html.BeginForm("CalculateResult","Demon","Post"))
 {
-<div class="form-group">
-    <label for="">Select Demons</label>
-    <select class="form-control" name="Input1" value="">
-        @foreach (var demon in @Model)
-        {
-        <option value="@demon.Name">@demon.Name</option>
-        }
-    </select>
-    <select class="form-control" name="Input2" value="">
-        @foreach (var demon in @Model)
-        {
-        <option value="@demon.Name">@demon.Name</option>
-        }
-    </select>
-
-    <input type="submit" value="Start Fusion" class="bt btn-primary"/>
-</div>
+    
+    <div class="form-group">
+        <list id="FuseInput">
+            <ul>
+                <label id="DSTitle">Select Demons</label>
+            </ul>
+            <ul>
+                <select class="form-control" name="Input1" value="">
+                    @foreach (var demon in @Model)
+                    {
+                        <option value="@demon.Name">@demon.Name</option>
+                    }
+                </select>
+            </ul>
+            <ul>
+                <select class="form-control" name="Input2" value="">
+                    @foreach (var demon in @Model)
+                    {
+                        <option value="@demon.Name">@demon.Name</option>
+                    }
+                </select>
+            </ul>
+            <ul>
+                <input type="submit" value="Start Fusion" class="bt btn-primary" id="DFSubmit"/>
+            </ul>
+            <ul>
+                <a asp-area="" asp-controller="Demon" asp-action="Index">
+                    <img src="css/Images/PAD_4403_P3_Compendium_Artwork.png" alt="Demon Compendium Link" id="book"/>
+                </a>
+            </ul>
+            <ul>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Return Home</a>
+            </ul>
+        </list>
+    </div>
+    
 }

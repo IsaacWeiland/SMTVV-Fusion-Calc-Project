@@ -195,4 +195,30 @@ public class DemonRepository : IDemonRepo
         }
        
     }
+
+    public Demons DemonMath(string input1, string input2)
+    {
+        var demon1 = GetDemon(input1);
+        var demon2 = GetDemon(input2);
+        var resultLevel = CalculateLevel.Level(demon1.Level, demon2.Level);
+        string resultRace;
+        Demons resultDemon;
+        if (demon1.Race == "Element")
+        {
+            resultRace = GetRace(demon1.Name, demon2.Race);
+            resultDemon = IsElemental(resultRace, demon2.Race, demon2.Level);
+        }
+        else if (demon2.Race == "Element")
+        {
+            resultRace = GetRace(demon1.Race, demon2.Name);
+            resultDemon = IsElemental(resultRace, demon1.Race, demon1.Level);
+        }
+        else
+        {
+            resultRace = GetRace(demon1.Race, demon2.Race);
+            resultDemon = GetDemonResult(resultRace, resultLevel);
+        }
+
+        return resultDemon;
+    }
 }

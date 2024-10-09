@@ -57,3 +57,5 @@ C:\Users\0ni\Desktop\repos\FusionCalcV3\FusionCalcV3\obj\Debug\net7.0\refint\Fus
 C:\Users\0ni\Desktop\repos\FusionCalcV3\FusionCalcV3\obj\Debug\net7.0\FusionCalcV3.pdb
 C:\Users\0ni\Desktop\repos\FusionCalcV3\FusionCalcV3\obj\Debug\net7.0\FusionCalcV3.genruntimeconfig.cache
 C:\Users\0ni\Desktop\repos\FusionCalcV3\FusionCalcV3\obj\Debug\net7.0\ref\FusionCalcV3.dll
+C:\Users\0ni\Desktop\repos\FusionCalcV3\FusionCalcV3\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\0ni\Desktop\repos\FusionCalcV3\FusionCalcV3\bin\Debug\net7.0\Moq.dll

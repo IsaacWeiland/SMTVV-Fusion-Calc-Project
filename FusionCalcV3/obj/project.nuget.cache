@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dZp4YFikdXODc6aCNFHxgiab5xfk1ALqA+hzfU9OjBuU+ovqI55n70v6O+m4TzFy75gWsrx1sS9b8nijnMepZQ==",
+  "dgSpecHash": "XIXJex691q+Bn9UWTbqTaNSeP1Pe5in0iqQDmbAkhFu5riTKsQTe9rwkQDkn0ChOP54EYRXSDA3mpzeI2hIVdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\FusionCalcV3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\0ni\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "C:\\Users\\0ni\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",
@@ -12,6 +13,7 @@
     "C:\\Users\\0ni\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\0ni\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\mysql.data\\9.0.0\\mysql.data.9.0.0.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\0ni\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",

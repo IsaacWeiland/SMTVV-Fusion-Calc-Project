@@ -5,7 +5,7 @@
     <a href="/Table/InsertTable/">Add Fusions</a>
 </div>
 
-<table class="table">
+<table class="table" id="fart">
     <tr>
         <th>Race</th>
         <th>Avatar</th>
@@ -50,7 +50,7 @@
     
     @foreach (var race in @Model)
     {
-        <tr>
+        <tr id="tablebody">
             <td><a href="/Table/ViewRace/@race.RaceName">@race.RaceName</a></td>
             <td>@race.Avatar</td>
             <td>@race.Avian</td>
@@ -93,3 +93,5 @@
         </tr>
     }
 </table>
+<footer>
+</footer>

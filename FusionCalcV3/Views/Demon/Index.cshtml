@@ -1,6 +1,7 @@
 @model IEnumerable<Demons>
 
 <h2>List of Demons</h2>
+<h3><a asp-area="" asp-controller="Demon" asp-action="ViewCalculator">To calculator     </a> <a asp-area="" asp-controller="Home" asp-action="Index">To home</a></h3>
 
 <table class="table">
     <tr>
@@ -12,11 +13,12 @@
 
     @foreach (var demon in @Model)
     {
-    <tr>
-        <td><a href="/Demon/ViewDemon/@demon.Name">@demon.Name</a></td>
-        <td>@demon.Level</td>
-        <td>@demon.Race</td>
-        <td>@demon.Alignment</td>
-    </tr>
+        <tr>
+            <td><a href="/Demon/ViewDemon/@demon.Name">@demon.Name</a></td>
+            <td>@demon.Level</td>
+            <td>@demon.Race</td>
+            <td>@demon.Alignment</td>
+        </tr>
     }
 </table>
+<h3><a asp-area="" asp-controller="Demon" asp-action="ViewCalculator">To calculator     </a> <a asp-area="" asp-controller="Home" asp-action="Index">To home</a></h3>

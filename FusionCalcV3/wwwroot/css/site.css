@@ -20,7 +20,7 @@ html {
 body {
   margin-bottom: 60px;
   background: url("./Images/moon-from-pngfre-2.png") no-repeat top center, 
-          linear-gradient(90deg, rgba(10,83,190,1) 0%, rgba(0,0,0,1) 50%, rgba(10,83,190,1) 100%) no-repeat;
+          linear-gradient(90deg, rgba(10,83,190,1) 0%, rgba(0,0,0,1) 50%, rgba(10,83,190,1) 100%);
   ;
   color: #132c7f;
 }
@@ -31,6 +31,7 @@ body {
 }
 
 .table{
+  ;
   color: white;
   text-shadow: 1px 1px black;
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(235,229,91,0.8) 4%, rgba(187,190,10,.75) 50%, rgba(0,0,0,0) 100%);
@@ -40,12 +41,24 @@ a{
  color: black; 
 }
 h2{
-  align-items: center;
+  display: flex;
+  justify-content: center;
   text-shadow: 1px 1px #b3ccea;
 }
-footer{
+h3{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  a{
+    color: darkblue;
+  }
+}
+footer, header{
+  display: none; 
   font-size: 15px;
   text-align: center;
+  background-size: inherit;
   background-color: white;
   text-shadow: none;
 }
@@ -54,4 +67,43 @@ footer{
   font-size: 20px;
   text-shadow: black 1px 1px;
   color: white;
+    background: rgba(10, 83, 190, 1) none;
 }
+#fart{
+  text-space: 5px;
+  font-size: 10px;
+}
+#logo{
+  width: 200px;
+  height: 200px;
+}
+.form-control{
+  /*width: 150px;*/
+}
+#DSTitle{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-size: 20px;
+  background-size: 200px;
+}
+
+.form-group{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.31);
+  margin-left: 350px;
+}
+ul, h3{
+  a{
+    color: #0dcaf0;
+    text-shadow: black 1px 1px;
+  }
+}
+
+
