@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Images\\PAD_4403_P3_Compendium_Artwork.png"
     },
     {
+      "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\mGBA-0.10.3-win64-installer.exe",
+      "PackagePath": "staticwebassets\\css\\Images\\mGBA-0.10.3-win64-installer.exe"
+    },
+    {
       "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\moon-from-pngfre-2.png",
       "PackagePath": "staticwebassets\\css\\Images\\moon-from-pngfre-2.png"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\smt_logo.webp",
       "PackagePath": "staticwebassets\\css\\Images\\smt_logo.webp"
+    },
+    {
+      "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\srm-to-sav-master.zip",
+      "PackagePath": "staticwebassets\\css\\Images\\srm-to-sav-master.zip"
     },
     {
       "Id": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\site.css",

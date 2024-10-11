@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NPpBvV7dfoAwPPr+d4s4OUv6Kcd5Y1HvDntuB848ydo=",
+  "Hash": "FOCo6TAtei6X1qorzQzj4ZbM3mjShoHwNDG6ZckNyIY=",
   "Source": "FusionCalcV3",
   "BasePath": "_content/FusionCalcV3",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\FusionCalcV3.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\mGBA-0.10.3-win64-installer.exe",
+      "SourceId": "FusionCalcV3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\",
+      "BasePath": "_content/FusionCalcV3",
+      "RelativePath": "css/Images/mGBA-0.10.3-win64-installer.exe",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\mGBA-0.10.3-win64-installer.exe"
     },
     {
       "Identity": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\moon-from-pngfre-2.png",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Images\\smt_logo.webp"
+    },
+    {
+      "Identity": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\Images\\srm-to-sav-master.zip",
+      "SourceId": "FusionCalcV3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\",
+      "BasePath": "_content/FusionCalcV3",
+      "RelativePath": "css/Images/srm-to-sav-master.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\srm-to-sav-master.zip"
     },
     {
       "Identity": "C:\\Users\\0ni\\Desktop\\repos\\FusionCalcV3\\FusionCalcV3\\wwwroot\\css\\site.css",

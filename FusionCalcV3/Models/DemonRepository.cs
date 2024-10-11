@@ -21,78 +21,35 @@ public class DemonRepository : IDemonRepo
 
     public Demons GetDemon(string name)
     {
-        return _conn.QuerySingle<Demons>("SELECT * FROM demons WHERE Name = @name", new { name = name});
+        return _conn.QuerySingle<Demons>("SELECT * FROM demons WHERE Name = @name", new { name});
     }
 
-    public Demons GetDemonResult(string race, int level)
+    public Demons DemonMath(string input1, string input2)
     {
-        Demons result;
-        while (true)
+        string resultRace;
+        Demons resultDemon;
+        var demon1 = GetDemon(input1);
+        var demon2 = GetDemon(input2);
+        var resultLevel = CalculateLevel.Level(demon1.Level, demon2.Level);
+        if (demon1.Race == "Element")
         {
-            if (level > GetMaxRaceLevel(race))
-            {
-                if (GetMaxRaceLevel(race) == 0)
-                {
-                    return null;
-                }
-                try
-                {
-                    result = _conn.QuerySingle<Demons>(
-                        "SELECT * FROM demons WHERE Race = @race AND Level = @level AND IsSpecialFuse IS NOT TRUE AND IsAccident IS NOT TRUE",
-                        new { race, level });
-                }
-                catch (InvalidOperationException e)
-                {
-                    level--;
-                    continue;
-                }
-                if (!result.Name.Equals(null))
-                {
-                    return result;
-                }
-            }
-            else
-            {
-                try
-                {
-                    result = _conn.QuerySingle<Demons>(
-                        "SELECT * FROM demons WHERE Race = @race AND Level = @level AND IsSpecialFuse IS NOT TRUE AND IsAccident IS NOT TRUE",
-                        new { race, level });
-                }
-                catch (InvalidOperationException e)
-                {
-                    level++;
-                    continue;
-                }
-                if (!result.Name.Equals(null))
-                {
-                    return result;
-                }
-                
-            }
+            resultRace = GetRace(demon1.Name, demon2.Race);
+            resultDemon = IsElemental(resultRace, demon2.Race, demon2.Level);
         }
-    }
-        
-    
+        else if (demon2.Race == "Element")
+        {
+            resultRace = GetRace(demon1.Race, demon2.Name);
+            resultDemon = IsElemental(resultRace, demon1.Race, demon1.Level);
+        }
+        else
+        {
+            resultRace = GetRace(demon1.Race, demon2.Race);
+            resultDemon = GetDemonResult(resultRace, resultLevel);
+        }
 
-    private int GetMaxRaceLevel(string race)
-    {
-        try
-        {
-            return _conn.QuerySingle<int>(
-                "SELECT MAX(Level) FROM demons WHERE RACE = @race AND IsSpecialFuse IS NOT TRUE;",
-                new { race });
-        }
-        catch (InvalidCastException e)
-        {
-            return 0;
-        }
-        catch (DataException f)
-        {
-            return 0;
-        }
-       
+        return resultDemon;
     }
+
     public string GetRace(string demon1, string demon2)
     {
         string result;
@@ -177,6 +134,26 @@ public class DemonRepository : IDemonRepo
             return null;
         }
     }
+
+    private int GetMaxRaceLevel(string race)
+    {
+        try
+        {
+            return _conn.QuerySingle<int>(
+                "SELECT MAX(Level) FROM demons WHERE RACE = @race AND IsSpecialFuse IS NOT TRUE;",
+                new { race });
+        }
+        catch (InvalidCastException e)
+        {
+            return 0;
+        }
+        catch (DataException f)
+        {
+            return 0;
+        }
+       
+    }
+
     private int GetMinRaceLevel(string race)
     {
         try
@@ -196,29 +173,52 @@ public class DemonRepository : IDemonRepo
        
     }
 
-    public Demons DemonMath(string input1, string input2)
+    public Demons GetDemonResult(string race, int level)
     {
-        var demon1 = GetDemon(input1);
-        var demon2 = GetDemon(input2);
-        var resultLevel = CalculateLevel.Level(demon1.Level, demon2.Level);
-        string resultRace;
-        Demons resultDemon;
-        if (demon1.Race == "Element")
+        Demons result;
+        while (true)
         {
-            resultRace = GetRace(demon1.Name, demon2.Race);
-            resultDemon = IsElemental(resultRace, demon2.Race, demon2.Level);
+            if (level >= GetMaxRaceLevel(race))
+            {
+                if (GetMaxRaceLevel(race) == 0)
+                {
+                    return null;
+                }
+                try
+                {
+                    result = _conn.QuerySingle<Demons>(
+                        "SELECT * FROM demons WHERE Race = @race AND Level = @level AND IsSpecialFuse IS NOT TRUE AND IsAccident IS NOT TRUE",
+                        new { race, level });
+                }
+                catch (InvalidOperationException e)
+                {
+                    level--;
+                    continue;
+                }
+                if (!result.Name.Equals(null))
+                {
+                    return result;
+                }
+            }
+            else
+            {
+                try
+                {
+                    result = _conn.QuerySingle<Demons>(
+                        "SELECT * FROM demons WHERE Race = @race AND Level = @level AND IsSpecialFuse IS NOT TRUE AND IsAccident IS NOT TRUE",
+                        new { race, level });
+                }
+                catch (InvalidOperationException e)
+                {
+                    level++;
+                    continue;
+                }
+                if (!result.Name.Equals(null))
+                {
+                    return result;
+                }
+                
+            }
         }
-        else if (demon2.Race == "Element")
-        {
-            resultRace = GetRace(demon1.Race, demon2.Name);
-            resultDemon = IsElemental(resultRace, demon1.Race, demon1.Level);
-        }
-        else
-        {
-            resultRace = GetRace(demon1.Race, demon2.Race);
-            resultDemon = GetDemonResult(resultRace, resultLevel);
-        }
-
-        return resultDemon;
     }
 }

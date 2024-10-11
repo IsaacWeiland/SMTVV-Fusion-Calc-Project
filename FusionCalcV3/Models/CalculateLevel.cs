@@ -5,17 +5,18 @@ namespace FusionCalcV3.Models;
 
 public static class CalculateLevel
 {
-    public static int Level(int dem1, int dem2)
+    public static int Level(float dem1, float dem2)
     {
-        var result = (dem1 + dem2) / 2;
+        int result = (int)Math.Ceiling((dem1 + dem2) / 2);
         if (result > 99)
         {
             result = 99;
+            return result;
         }
-
         if (result < 1)
         {
             result = 1;
+            return result;
         }
         return result + 1;
     }

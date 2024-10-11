@@ -15,10 +15,12 @@ namespace FusionCalcTests;
 public class UnitTest1
 {
     private readonly Mock<IDemonRepo> _mockRepo;
+    private readonly Mock<DemonRepository> _mockDemon;
     private readonly DemonController _demonController;
     public UnitTest1()
     {
         _mockRepo = new Mock<IDemonRepo>();
+        _mockDemon = new Mock<DemonRepository>();
         _demonController = new DemonController(_mockRepo.Object);
     }
     [Fact]
@@ -32,19 +34,47 @@ public class UnitTest1
         Assert.True(model.Any());
     }
 
+    #region LevelTests
     [Theory]
-    [InlineData("Kinmamon", "Lilith", "Demeter")]
-    public void TestFusion(string input1, string input2, string expInput)
-    {
-        _mockRepo.Setup(repo => repo.DemonMath(input1, input2));
-        var result = _demonController.ViewDemon(expInput);
-        var viewResult = Assert.IsType<ViewResult>(result);
-        var model = Assert.IsAssignableFrom<IEnumerable<Demons>>(viewResult.ViewData.Model);
-        Assert.NotNull(model);
-        Assert.True(model.Any());
-    }
+    [InlineData(28, 24, 27)]
+    [InlineData(49, 12, 32)]
+    [InlineData(96, 2, 50)]
+    [InlineData(96,95, 97)]
+    [InlineData(2,1, 3)]
+    [InlineData(50,50,51)]
     
+    public void TestGetLevel(int input1, int input2, int expected)
+    {
+        var actual = CalculateLevel.Level(input1, input2);
+        Assert.Equal(expected, actual);
+    }
+    #endregion
 
+    #region GetRaceTests
+    [Theory]
+    [InlineData("Megami","Fairy","Wargod")]
+    [InlineData("Lady","UMA","Holy")]
+    [InlineData("Deity","Night","Lady")]
+    [InlineData("Tyrant","Vile","Jaki")]
+    [InlineData("Fairy","Fiend","Jaki")]
+    [InlineData("Night","Divine","Megami")]
+    [InlineData("Night","Raptor","Megami")]
+    [InlineData("Beast","Divine","Brute")]
+    [InlineData("Drake","Jaki","Brute")]
+    [InlineData("Jirae","Fiend","Night")]
+    [InlineData("Yoma","Snake","Night")]
+    [InlineData("Wilder","Fallen","Raptor")]
+    [InlineData("Jirae","Haunt","Femme")]
+    [InlineData("Megami","Kunitsu","Femme")]
+    [InlineData("Holy","Wargod","Kishin")]
+    [InlineData("Brute","Enigma","Kishin")]
+    [InlineData("Vile","Jaki","Haunt")]
+    public void TestRaceGrab(string input1, string input2, string expected)
+    {
+        _mockRepo.Setup(repo => repo.GetRace(input1, input2)).Returns(expected);
+    }
+    #endregion
+    
     private List<Demons> GetDemonsTest()
     {
         return new List<Demons>()

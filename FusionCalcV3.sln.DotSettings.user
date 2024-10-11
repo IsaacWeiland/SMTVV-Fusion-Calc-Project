@@ -1,4 +1,14 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7f5a4171_002Ddb67_002D48e7_002D903c_002Dbbfb92cf4e09/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestGetLevel" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetLevel&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=82e7ecf3_002D8851_002D4386_002Da92c_002Df65f23755fd1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestGetLevel(input1: 96, input2: 95, expected: 82) #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetLevel&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9f206aaf_002D47df_002D4782_002D921b_002D75beb896a643/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestFusion" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestFusion&lt;/TestId&gt;&#xD;
@@ -9,9 +19,46 @@
     &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestFusion&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ce18eff1_002Dca26_002D408d_002Da47c_002D5e3c9a5bbab8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestFusion #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c8a97d84_002Df25c_002D4b5d_002D84d4_002Dd9031a44853f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestGetLevel(input1: 96, input2: 95, expected: 82)" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestFusion&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetAll&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetLevel.TestGetLevel(input1: 96, input2: 95, expected: 82)&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ce18eff1_002Dca26_002D408d_002Da47c_002D5e3c9a5bbab8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestFusion #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestFusion&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetAll&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestRaceGrab&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetLevel&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;97E58D64-3B00-429B-8758-EB9460C7D666/f:UnitTest2.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e0bacf38_002Dfc18_002D4d9c_002Db40d_002Dd902da150b1b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestFusion&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetAll&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestRaceGrab&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetLevel&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;97E58D64-3B00-429B-8758-EB9460C7D666/f:UnitTest2.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e8dd877e_002Ded4b_002D4425_002Da268_002Dfcc3facb6ce2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestFusion&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetAll&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestRaceGrab&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetLevel&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;97E58D64-3B00-429B-8758-EB9460C7D666/f:UnitTest2.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fb25e61e_002D6354_002D488e_002D8e56_002Dbc8a001b3435/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestGetLevel #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::97E58D64-3B00-429B-8758-EB9460C7D666::net7.0::FusionCalcTests.UnitTest1.TestGetLevel&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
